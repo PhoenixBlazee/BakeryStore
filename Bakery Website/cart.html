@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Bakery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="cart-bg cart-page">
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html" class="logo-txt">
+                    Bakery<span>Store</span>
+                </a>
+            </div>
+            <ul class="navlist" id="navlist">
+                <li><a href="index.html" class="navlinks">Home</a></li>
+                <li><a href="about.html" class="navlinks">About</a></li>
+                <li><a href="menu.html" class="navlinks">Menu</a></li>
+                <li><a href="resturant.html" class="navlinks active">Resturant</a></li>
+                <li><a href="cart.html" class="navlinks">Cart</a></li>
+                <li><a href="contact.html" class="navlinks">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="icons-link">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </a>
+                <a href="login.html" class="icons-link">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart-container login-wrapper">
+        <div class="cart-header">
+            <span>Shopping Cart</span>
+            <a href="#" class="remove-all">Remove all</a>
+        </div>
+        <div class="cart-items"></div>
+        <hr class="cart-divider">
+        <div class="cart-summary">
+            <div>
+                <div class="cart-summary-label">Sub-Total</div>
+                <div class="cart-summary-items">0 items</div>
+            </div>
+            <div class="cart-summary-total">0.00</div>
+        </div>
+        <button class="cart-checkout-btn">Checkout</button>
+
+        <div class="cart-links">
+            <a href="menu.html" class="back-link">Go to Menu</a>
+            <a href="index.html" class="back-link">Back to Home</a>
+        </div>
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+</html>

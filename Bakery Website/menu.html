@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Bakery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html" class="logo-txt">
+                    Bakery<span>Store</span>
+                </a>
+            </div>
+            <ul class="navlist" id="navlist">
+                <li><a href="index.html" class="navlinks">Home</a></li>
+                <li><a href="about.html" class="navlinks">About</a></li>
+                <li><a href="menu.html" class="navlinks active">Menu</a></li>
+                <li><a href="cart.html" class="navlinks">Cart</a></li>
+                <li><a href="contact.html" class="navlinks">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="icons-link">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </a>
+                <a href="login.html" class="icons-link">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section container">
+            <h2>Our Menu</h2>
+            <div class="card-container">
+                
+
+                <div class="card menu-card">
+                    <img src="Assets/cake.png">
+                    <h3>Cake</h3>
+                    <h4>99.00</h4>
+                    <p>Classic bakery cake, soft and delicious.</p>
+                    <button class="add-cart-btn"
+                            data-name="Cake"
+                            data-price="99.00"
+                            data-img="Assets/cake.png">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                
+
+                <div class="card menu-card">
+                    <img src="Assets/cake 1.png">
+                    <h3>Cookies</h3>
+                    <h4>99.00</h4>
+                    <p>Crunchy cookies with chocolate chips.</p>
+                    <button class="add-cart-btn"
+                            data-name="Cookies"
+                            data-price="99.00"
+                            data-img="Assets/cake 1.png">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+               
+                
+                <div class="card menu-card">
+                    <img src="Assets/creamy pancake.png">
+                    <h3>Creamy Pancake</h3>
+                    <h4>99.00</h4>
+                    <p>Fluffy pancakes with creamy topping.</p>
+                    <button class="add-cart-btn"
+                            data-name="Creamy Pancake"
+                            data-price="99.00"
+                            data-img="Assets/creamy pancake.png">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                
+
+                <div class="card menu-card">
+                    <img src='Assets/images.webp'>
+                    <h3 class="long-title">Strawberry Shortcake</h3>
+                    <h4>99.00</h4>
+                    <p>Fresh strawberries and whipped cream.</p>
+                    <button class="add-cart-btn"
+                            data-name="Strawberry Shortcake"
+                            data-price="99.00"
+                            data-img="Assets/images.webp">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                
+
+                <div class="card menu-card">
+                    <img src="Assets/bread 1.jpeg">
+                    <h3>Bread</h3>
+                    <h4>59.00</h4>
+                    <p>Freshly baked bread, perfect for sandwiches.</p>
+                    <button class="add-cart-btn"
+                            data-name="Bread"
+                            data-price="59.00"
+                            data-img="Assets/bread 1.jpeg">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+
+        <div class="cart-items"></div>
+    </main>
+    <script src="js/menu.js"></script>
+</body>
+</html>
